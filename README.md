@@ -1,2 +1,2 @@
 # Race-Car-Voice-Control
- Control a race car throuch voice commands
+ Control a race car through voice commands
