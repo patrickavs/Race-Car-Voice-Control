@@ -1,34 +1,44 @@
 import speechpy
 from scipy.io import wavfile
-from sklearn import svm
+from keras.models import Sequential
+from keras.layers import Dense, Conv2D, Flatten
 from sklearn.model_selection import train_test_split
 
-# Load the audio file
+# Laden Sie die Audio-Datei
 sample_rate, signal = wavfile.read('audio.wav')
 
-# Extract the MFCCs
+# Extrahieren Sie die MFCCs
 mfcc = speechpy.feature.mfcc(signal, sample_rate)
 
-# Load the training data
-X_train = load_training_data()  # Replace with your own function
-y_train = load_training_labels()  # Replace with your own function
+# Laden Sie die Trainingsdaten
+X_train = load_training_data()  # Ersetzen Sie dies durch Ihre eigene Funktion
+y_train = load_training_labels()  # Ersetzen Sie dies durch Ihre eigene Funktion
 
-# Split the data into training and validation sets
+# Teilen Sie die Daten in Trainings- und Validierungssätze auf
 X_train, X_val, y_train, y_val = train_test_split(
     X_train, y_train, test_size=0.2)
 
-# Train the SVM model
-clf = svm.SVC()
-clf.fit(X_train, y_train)
+# Erstellen Sie das CNN-Modell
+model = Sequential()
+model.add(Conv2D(32, kernel_size=(3, 3), activation='relu',
+          input_shape=(mfcc.shape[0], mfcc.shape[1], 1)))
+model.add(Conv2D(64, kernel_size=(3, 3), activation='relu'))
+model.add(Flatten())
+model.add(Dense(128, activation='relu'))
+model.add(Dense(3, activation='softmax'))
 
-# Evaluate the model on the validation set
-accuracy = clf.score(X_val, y_val)
+# Kompilieren Sie das Modell
+model.compile(loss='categorical_crossentropy',
+              optimizer='adam', metrics=['accuracy'])
 
-# Load the audio file
+# Trainieren Sie das Modell
+model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=10)
+
+# Laden Sie die Test-Audio-Datei
 sample_rate, signal = wavfile.read('test_audio.wav')
 
-# Extract the MFCCs
+# Extrahieren Sie die MFCCs aus der Test-Audio-Datei
 mfcc = speechpy.feature.mfcc(signal, sample_rate)
 
-# Predict the label using the SVM model
-label = clf.predict(mfcc)
+# Verwenden Sie das trainierte Modell, um das Label vorherzusagen
+label = model.predict(mfcc)
