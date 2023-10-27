@@ -20,7 +20,7 @@ def audio_to_text():
 
 
 # URL des Flask-Servers des Race Cars
-race_car_url = 'http://192.168.0.100:5000'
+race_car_url = 'http://10.42.0.1:5000'
 
 # Empfangen von Sprachbefehlen
 while True:
