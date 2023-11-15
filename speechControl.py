@@ -1,4 +1,4 @@
-# import socket
+import socket
 import speech_recognition as sr
 import requests
 import re

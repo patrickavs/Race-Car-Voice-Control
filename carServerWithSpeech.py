@@ -11,6 +11,7 @@ import threading
 from PIL import Image
 import multiprocessing
 import speech_recognition as sr
+from ovrsdk import * 
 
 app = Flask(__name__)
 
