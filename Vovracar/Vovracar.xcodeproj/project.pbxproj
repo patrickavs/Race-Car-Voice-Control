@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		560035662B30663700A89BF5 /* VovracarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560035652B30663700A89BF5 /* VovracarApp.swift */; };
+		560035682B30663700A89BF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560035672B30663700A89BF5 /* ContentView.swift */; };
+		5600356A2B30663800A89BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560035692B30663800A89BF5 /* Assets.xcassets */; };
+		5600356D2B30663800A89BF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5600356C2B30663800A89BF5 /* Preview Assets.xcassets */; };
+		560035742B30665E00A89BF5 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560035732B30665E00A89BF5 /* Connection.swift */; };
+		560035762B30668D00A89BF5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560035752B30668D00A89BF5 /* ViewModel.swift */; };
+		560035782B3066BC00A89BF5 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560035772B3066BC00A89BF5 /* Sensor.swift */; };
+		5600357A2B3066D900A89BF5 /* SpeechRecog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560035792B3066D900A89BF5 /* SpeechRecog.swift */; };
+		5600357C2B3066F800A89BF5 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5600357B2B3066F800A89BF5 /* Camera.swift */; };
+		560035812B306E9800A89BF5 /* HTTPTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 560035802B306E9800A89BF5 /* HTTPTypes */; };
+		560035832B306E9800A89BF5 /* HTTPTypesFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 560035822B306E9800A89BF5 /* HTTPTypesFoundation */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		560035622B30663700A89BF5 /* Vovracar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vovracar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		560035652B30663700A89BF5 /* VovracarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VovracarApp.swift; sourceTree = "<group>"; };
+		560035672B30663700A89BF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		560035692B30663800A89BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5600356C2B30663800A89BF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		560035732B30665E00A89BF5 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		560035752B30668D00A89BF5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		560035772B3066BC00A89BF5 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		560035792B3066D900A89BF5 /* SpeechRecog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecog.swift; sourceTree = "<group>"; };
+		5600357B2B3066F800A89BF5 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5600355F2B30663700A89BF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560035812B306E9800A89BF5 /* HTTPTypes in Frameworks */,
+				560035832B306E9800A89BF5 /* HTTPTypesFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		560035592B30663700A89BF5 = {
+			isa = PBXGroup;
+			children = (
+				560035642B30663700A89BF5 /* Vovracar */,
+				560035632B30663700A89BF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		560035632B30663700A89BF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				560035622B30663700A89BF5 /* Vovracar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		560035642B30663700A89BF5 /* Vovracar */ = {
+			isa = PBXGroup;
+			children = (
+				560035652B30663700A89BF5 /* VovracarApp.swift */,
+				560035672B30663700A89BF5 /* ContentView.swift */,
+				560035752B30668D00A89BF5 /* ViewModel.swift */,
+				560035732B30665E00A89BF5 /* Connection.swift */,
+				5600357B2B3066F800A89BF5 /* Camera.swift */,
+				560035792B3066D900A89BF5 /* SpeechRecog.swift */,
+				560035772B3066BC00A89BF5 /* Sensor.swift */,
+				560035692B30663800A89BF5 /* Assets.xcassets */,
+				5600356B2B30663800A89BF5 /* Preview Content */,
+			);
+			path = Vovracar;
+			sourceTree = "<group>";
+		};
+		5600356B2B30663800A89BF5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5600356C2B30663800A89BF5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		560035612B30663700A89BF5 /* Vovracar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560035702B30663800A89BF5 /* Build configuration list for PBXNativeTarget "Vovracar" */;
+			buildPhases = (
+				5600355E2B30663700A89BF5 /* Sources */,
+				5600355F2B30663700A89BF5 /* Frameworks */,
+				560035602B30663700A89BF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vovracar;
+			packageProductDependencies = (
+				560035802B306E9800A89BF5 /* HTTPTypes */,
+				560035822B306E9800A89BF5 /* HTTPTypesFoundation */,
+			);
+			productName = Vovracar;
+			productReference = 560035622B30663700A89BF5 /* Vovracar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5600355A2B30663700A89BF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					560035612B30663700A89BF5 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 5600355D2B30663700A89BF5 /* Build configuration list for PBXProject "Vovracar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 560035592B30663700A89BF5;
+			packageReferences = (
+				5600357F2B306E9800A89BF5 /* XCRemoteSwiftPackageReference "swift-http-types" */,
+			);
+			productRefGroup = 560035632B30663700A89BF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				560035612B30663700A89BF5 /* Vovracar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		560035602B30663700A89BF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5600356D2B30663800A89BF5 /* Preview Assets.xcassets in Resources */,
+				5600356A2B30663800A89BF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5600355E2B30663700A89BF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560035682B30663700A89BF5 /* ContentView.swift in Sources */,
+				560035782B3066BC00A89BF5 /* Sensor.swift in Sources */,
+				5600357A2B3066D900A89BF5 /* SpeechRecog.swift in Sources */,
+				560035742B30665E00A89BF5 /* Connection.swift in Sources */,
+				560035762B30668D00A89BF5 /* ViewModel.swift in Sources */,
+				5600357C2B3066F800A89BF5 /* Camera.swift in Sources */,
+				560035662B30663700A89BF5 /* VovracarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5600356E2B30663800A89BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5600356F2B30663800A89BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		560035712B30663800A89BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vovracar/Preview Content\"";
+				DEVELOPMENT_TEAM = Z95ND7B37U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HochschuleHof.Vovracar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		560035722B30663800A89BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vovracar/Preview Content\"";
+				DEVELOPMENT_TEAM = Z95ND7B37U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HochschuleHof.Vovracar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5600355D2B30663700A89BF5 /* Build configuration list for PBXProject "Vovracar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5600356E2B30663800A89BF5 /* Debug */,
+				5600356F2B30663800A89BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560035702B30663800A89BF5 /* Build configuration list for PBXNativeTarget "Vovracar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560035712B30663800A89BF5 /* Debug */,
+				560035722B30663800A89BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5600357F2B306E9800A89BF5 /* XCRemoteSwiftPackageReference "swift-http-types" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-http-types";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		560035802B306E9800A89BF5 /* HTTPTypes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5600357F2B306E9800A89BF5 /* XCRemoteSwiftPackageReference "swift-http-types" */;
+			productName = HTTPTypes;
+		};
+		560035822B306E9800A89BF5 /* HTTPTypesFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5600357F2B306E9800A89BF5 /* XCRemoteSwiftPackageReference "swift-http-types" */;
+			productName = HTTPTypesFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5600355A2B30663700A89BF5 /* Project object */;
+}
