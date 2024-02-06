@@ -25,11 +25,15 @@ public class HandleWitResponse : MonoBehaviour
         //HandleSpeechCommand(directions, controls, numbers);
     }
 
+    private void OnDestroy()
+    {
+        StartCoroutine(SendPostRequest(SERVER_URL + "/stop", ""));
+    }
+
     public void handleWit(string[] commands)
     {
         // Füge die neuen Befehle zur Liste hinzu
         commandHistory.AddRange(commands);
-        
 
         // Iteriere durch die Befehle und führe die entsprechenden Aktionen aus
         foreach (string command in commands)
@@ -50,6 +54,7 @@ public class HandleWitResponse : MonoBehaviour
                     StartCoroutine(
                         SendPostRequest(SERVER_URL + "/left", "{\"angle\": " + 110 + "}")
                     );
+
                     break;
                 case "right":
                     /*if (angle < 70)
@@ -68,24 +73,29 @@ public class HandleWitResponse : MonoBehaviour
                     StartCoroutine(
                         SendPostRequest(SERVER_URL + "/go", "{\"speed\": " + 0.15 + "}")
                     );
+
                     break;
                 case "stop":
                     StartCoroutine(SendPostRequest(SERVER_URL + "/stop", ""));
+
                     break;
                 case "forward":
                     StartCoroutine(SendPostRequest(SERVER_URL + "/forward", ""));
+
                     break;
                 case "backward":
                     StartCoroutine(SendPostRequest(SERVER_URL + "/backward", ""));
+
                     break;
                 default:
+
                     break;
             }
         }
     }
 
     // Methode, um den letzten Befehl abzurufen
-    public string GetLastCommand()
+    /*public string GetLastCommand()
     {
         if (commandHistory.Count > 0)
         {
@@ -95,7 +105,7 @@ public class HandleWitResponse : MonoBehaviour
         {
             return ""; // Wenn die Liste leer ist, wird ein leerer String zurückgegeben
         }
-    }
+    }*/
 
     // Parse einen Float aus dem String
     public float GetFloatNumber(string number)
