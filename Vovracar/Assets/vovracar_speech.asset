@@ -1,0 +1,434 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-43967124773922655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c2918ba0e7451694416d42d69e0944, type: 3}
+  m_Name: WitComposerData
+  m_EditorClassIdentifier: 
+  canvases: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: vovracar_speech
+  m_EditorClassIdentifier: 
+  _clientAccessToken: J4HTQQYUHOHRVRPHLZ3644PQE7WXROUD
+  _appInfo:
+    name: vovracar_speech
+    id: 895070718671492
+    lang: en
+    isPrivate: 0
+    createdAt: 2023-12-18T03:51:59-0800
+    trainingStatus: 1
+    lastTrainDuration: 62
+    lastTrainedAt: 2024-01-19T02:57:44-0800
+    nextTrainAt: 2024-01-19T02:56:42-0800
+    intents:
+    - id: 902324714690955
+      name: set_action
+      entities:
+      - name: control:control
+        id: 359428113341354
+      - name: value:value
+        id: 1083619199482612
+    - id: 748129570542353
+      name: set_direction
+      entities:
+      - name: direction:direction
+        id: 737754184528671
+      - name: value:value
+        id: 1083619199482612
+    - id: 856708419794357
+      name: set_value
+      entities:
+      - name: value:value
+        id: 1083619199482612
+    entities:
+    - name: control
+      id: 893071585618242
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: control
+        id: 359428113341354
+      keywords:
+      - keyword: start
+        synonyms:
+        - start
+      - keyword: stop
+        synonyms:
+        - stop
+    - name: direction
+      id: 1484722662457434
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: direction
+        id: 737754184528671
+      keywords:
+      - keyword: Asian
+        synonyms:
+        - asian
+      - keyword: This
+        synonyms:
+        - this
+      - keyword: backward
+        synonyms:
+        - backward
+      - keyword: degrees
+        synonyms:
+        - degrees
+      - keyword: forward
+        synonyms:
+        - forward
+      - keyword: kidding
+        synonyms:
+        - kidding
+      - keyword: left
+        synonyms:
+        - left
+      - keyword: problem
+        synonyms:
+        - problem
+      - keyword: right
+        synonyms:
+        - right
+      - keyword: see
+        synonyms:
+        - see
+    - name: value
+      id: 690708183173634
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: value
+        id: 1083619199482612
+      keywords:
+      - keyword: 5
+        synonyms:
+        - 5
+      - keyword: 10
+        synonyms:
+        - 10
+      - keyword: 15
+        synonyms:
+        - 15
+      - keyword: 20
+        synonyms:
+        - 20
+      - keyword: 25
+        synonyms:
+        - 25
+      - keyword: 30
+        synonyms:
+        - 30
+    traits: []
+    versionTags:
+    - name: 1.0
+      created_at: 2023-12-18T04:00:51-0800
+      updated_at: 2023-12-18T04:00:53-0800
+      desc: 
+    voices:
+    - name: wit$Rebecca
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Charlie
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - fast
+      - projected
+    - name: wit$Cooper
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Vampire
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Prospector
+      locale: en_US
+      gender: male
+      styles:
+      - default
+    - name: wit$Cody
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Remi
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cam
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Connor
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Railey
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cael
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Carl
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Rubie
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Overconfident
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Disaffected
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Hollywood
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Trendy
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Baby
+      locale: en_US
+      gender: nonbinary
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Surfer
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Southern Accent
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Kenyan Accent
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Kid
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cartoon Villain
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Rosie
+      locale: en_CA
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Colin
+      locale: en_CA
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Pirate
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$British Butler
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Whimsical
+      locale: en_GB
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Wizard
+      locale: en_GB
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: wit$Cockney Accent
+      locale: en_GB
+      gender: nonbinary
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+  _configData:
+  - {fileID: -43967124773922655}
+  _configurationId: 32c2b59a-f479-4e0e-ba67-2516eb628206
+  timeoutMS: 10000
+  endpointConfiguration:
+    _uriScheme: 
+    _authority: 
+    _port: 0
+    _witApiVersion: 
+    _message: 
+    _speech: 
+    _dictation: 
+    _synthesize: 
+    _event: 
+    _converse: 
+  isDemoOnly: 0
+  useConduit: 1
+  _manifestLocalPath: ConduitManifest-85ee7a62-5e80-4fe3-8943-86dfa2d779f8.json
+  excludedAssemblies:
+  - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  relaxedResolution: 0
