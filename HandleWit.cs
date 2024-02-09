@@ -50,7 +50,7 @@ public class HandleWit : MonoBehaviour
         }
     }
 
-    // Sendet eine POST-Anfrage
+    // Sendet eine POST-Anfrage an die API, um das Auto ansteuern zu können
     IEnumerator SendPostRequest(string url, string jsonData)
     {
         using (UnityWebRequest request = new UnityWebRequest(url, "POST"))
