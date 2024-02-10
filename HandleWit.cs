@@ -25,28 +25,29 @@ public class HandleWit : MonoBehaviour
     // Empfange die Antwort von Wit und führe Aktionen basierend auf dieser Antwort aus
     public void handleWit(string[] commands)
     {
-        switch (commands[0])
+        if (commands[0] == "left")
         {
-            case "left":
-                StartCoroutine(SendPostRequest(SERVER_URL + "/left", "{\"angle\": " + 110 + "}"));
-                break;
-            case "right":
-                StartCoroutine(SendPostRequest(SERVER_URL + "/right", "{\"angle\": " + 80 + "}"));
-                break;
-            case "start":
-                StartCoroutine(SendPostRequest(SERVER_URL + "/go", "{\"speed\": " + 0.12 + "}"));
-                break;
-            case "stop":
-                StartCoroutine(SendPostRequest(SERVER_URL + "/stop", ""));
-                break;
-            case "forward":
-                StartCoroutine(SendPostRequest(SERVER_URL + "/forward", ""));
-                break;
-            case "backward":
-                StartCoroutine(SendPostRequest(SERVER_URL + "/backward", ""));
-                break;
-            default:
-                break;
+            StartCoroutine(SendPostRequest(SERVER_URL + "/left", "{\"angle\": " + 110 + "}"));
+        }
+        else if (commands[0] == "right")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/right", "{\"angle\": " + 80 + "}"));
+        }
+        else if (commands[0] == "start")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/go", "{\"speed\": " + 0.12 + "}"));
+        }
+        else if (commands[0] == "stop")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/stop", ""));
+        }
+        else if (commands[0] == "forward")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/forward", ""));
+        }
+        else if (commands[0] == "backward")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/backward", ""));
         }
     }
 
