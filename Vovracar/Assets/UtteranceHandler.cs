@@ -44,7 +44,7 @@ public class UtteranceHandler : MonoBehaviour
             angle = angle + 90;
             StartCoroutine(SendPostRequest(SERVER_URL + "/left", "{\"angle\": " + angle + "}"));
         }
-                else if (utterance.Contains("right")) {
+        else if (utterance.Contains("right")) {
             angle = 90 - angle;
             StartCoroutine(SendPostRequest(SERVER_URL + "/right", "{\"angle\": " + angle + "}"));
         }

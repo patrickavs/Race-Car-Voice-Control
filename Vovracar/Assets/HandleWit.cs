@@ -31,7 +31,7 @@ public class HandleWit : MonoBehaviour
                 StartCoroutine(SendPostRequest(SERVER_URL + "/left", "{\"angle\": " + 110 + "}"));
                 break;
             case "right":
-                StartCoroutine(SendPostRequest(SERVER_URL + "/right", "{\"angle\": " + 80 + "}"));
+                StartCoroutine(SendPostRequest(SERVER_URL + "/right", "{\"angle\": " + 73 + "}"));
                 break;
             case "start":
                 StartCoroutine(SendPostRequest(SERVER_URL + "/go", "{\"speed\": " + 0.12 + "}"));
@@ -48,6 +48,32 @@ public class HandleWit : MonoBehaviour
             default:
                 break;
         }
+
+        // Optional mit if-else Blöcken
+        /*if (commands[0] == "left")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/left", "{\"angle\": " + 110 + "}"));
+        }
+        else if (commands[0] == "right")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/right", "{\"angle\": " + 80 + "}"));
+        }
+        else if (commands[0] == "start")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/go", "{\"speed\": " + 0.12 + "}"));
+        }
+        else if (commands[0] == "stop")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/stop", ""));
+        }
+        else if (commands[0] == "forward")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/forward", ""));
+        }
+        else if (commands[0] == "backward")
+        {
+            StartCoroutine(SendPostRequest(SERVER_URL + "/backward", ""));
+        }*/
     }
 
     // Sendet eine POST-Anfrage an die API, um das Auto ansteuern zu können
